@@ -7,16 +7,16 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "gridsome": "^0.5.0",
+    "gridsome": "^0.5.8",
     "typeface-roboto": "0.0.54",
     "typeface-titillium-web": "0.0.72",
-    "vue-image-lightbox": "^6.1.2",
+    "vue-image-lightbox": "^6.2.0",
     "vue-in-viewport-directive": "^1.3.0",
     "vue-lazyload": "^1.2.6",
     "vue-parallaxy": "^1.1.1"
   },
   "devDependencies": {
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
     "style-resources-loader": "^1.2.1"
   }
