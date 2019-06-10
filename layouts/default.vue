@@ -4,24 +4,16 @@
       <article>
         <a href="https://www.fabian-marcus.de">
           <strong>Fabian Marcus</strong><br />
-          Frontend-Entwickler
+          Informatiker / Entwickler
         </a>
       </article>
       <article class="call-button">
         <a href="tel:01633060438" alt="Anrufen">Anrufen</a>
       </article>
     </header>
-    <slot/>
+    <nuxt />
   </div>
 </template>
-
-<static-query>
-  query {
-    metaData {
-      siteName
-    }
-  }
-</static-query>
 
 <style>
   body {
@@ -29,7 +21,8 @@
     margin:0;
     padding:0;
     line-height: 1.5;
-    background-color: white;
+    color: white;
+    background-color: #243447;
     font-family: "Titillium Web",Roboto,"Helvetica Neue",Arial,sans-serif;
   }
 
@@ -55,19 +48,20 @@
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
+    background-color: #243447;
+    color: white;
     z-index: 100;
   }
 
   .header a {
-    color: black;
+    color: white;
     text-decoration: none;
   }
 
   .call-button {
     padding: 0.5rem 1rem;
     border-radius: 8px;
-    border: 1px solid black;
+    border: 1px solid white;
   } 
 
   @media all and (min-width: 675px) {
