@@ -2,8 +2,7 @@
     <section class="intro">
         <article class="box headliner">
             <h2>Fabian M. Marcus</h2>
-            <p>Fachinformatiker für Anwendungsentwicklung</p>
-            <p>
+            <p>Fachinformatiker für Anwendungsentwicklung<br />
                 Webentwickler,
                 <span class="schwerpunkt">
                     Schwerpunkt <strong>Frontend</strong>

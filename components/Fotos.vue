@@ -1,9 +1,9 @@
 <template>
-    <section class="box fotos">
+    <section class="fotos box" v-in-viewport.once="{ margin: '-20% 0%' }">
         <h2>#Ich.</h2>
-        <div class="foto-images">
-            <a v-for="(image, imageIndex) in images" :key="imageIndex">
-                <img alt="Portrait imageIndex" :src="image" @click="index = imageIndex" />
+        <div class="foto-liste">
+            <a v-for="(image, imageIndex) in images" :key="imageIndex" class="foto" :class="`foto-${imageIndex+1}`">
+                <img alt="Portrait imageIndex" :src="image" @click="index = imageIndex"/>
             </a>
         </div>
 
@@ -35,19 +35,64 @@
     };
 </script>
 
-<style scoped>
-    .foto-images {
+<style lang="scss" scoped>
+    .fotos {
+        position: relative;
+    }
+
+    .foto-liste {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        > a {
+            max-width: 49%;
+            margin: 0 auto;
+        }
+        > a > img {
+            max-width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+        }
     }
-    .foto-images > a {
-        max-width: 49%;
-        margin: auto;
+
+    .foto {
+        position: relative;
+        
+        img {
+            opacity: 0;
+        }
     }
-    .foto-images > a > img {
-        max-width: 100%;
-        border-radius: 10px;
-        cursor: pointer;
+    .fotos.in-viewport .foto {
+        img {
+            opacity: 1;
+            transition: opacity 1s linear 250ms;
+        }
+    }
+
+    /** Fotos aus Viewport herausschieben */
+    .foto-1 { left: -250px; top: -250px; }
+    .foto-3 { left: -250px; bottom: -250px; }
+    .foto-2 { right: -250px; top: -250px; }
+    .foto-4 { right: -250px; bottom: -250px;}
+
+    /** Fotos einfliegen lassen */
+    .fotos.in-viewport {
+        .foto-1 {
+            left: 0; top: 0;
+            transition: left 1s ease-in, top 1s ease-in;
+        }
+        .foto-3 {
+            left: 0; bottom: 0;
+            transition: left 1s ease-in, bottom 1s ease-in;
+        }
+        .foto-2 {
+            right: 0; top: 0;
+            transition: right 1s ease-in, top 1s ease-in;
+        }
+        .foto-4 {
+            right: 0; bottom: 0;
+            transition: right 1s ease-in, bottom 1s ease-in;
+        }
     }
 </style>

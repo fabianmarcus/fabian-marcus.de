@@ -1,7 +1,7 @@
 {
   "name": "website",
   "version": "1.0.0",
-  "description": "presentation website",
+  "description": "Fabian Marcus - Tech Portrait. Website zu Skillset & Werdegang",
   "author": "Fabian Marcus",
   "private": true,
   "scripts": {
@@ -15,9 +15,14 @@
     "typeface-roboto": "0.0.54",
     "typeface-titillium-web": "0.0.72",
     "vue-gallery": "^2.0.0",
-    "vue-in-viewport-directive": "^2.0.0"
+    "vue-in-viewport-directive": "^2.0.0",
+    "vue-parallaxy": "^1.1.1"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9"
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.18.9",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^7.1.0"
   }
 }

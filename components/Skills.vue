@@ -1,11 +1,11 @@
 <template>
-    <section class="skills" v-in-viewport.once="-450">
+    <section class="skills" v-in-viewport.once="{ margin: '-20% 0%' }">
         <div class="box">
             <h2>#Skills</h2>
         </div>
         <div class="skillset">
             <article>
-                <img src="/skills/javascript.png" height="150"/>
+                <div class="skillimg"><img src="/skills/javascript.png" /></div>
                 <h3>Javascript</h3>
                 <p>
                     Javascript durchlebt viele Veränderungen. Beim gegebenen Tempo ist es schwer, immer auf dem
@@ -16,7 +16,7 @@
                 </p>
             </article>
             <article>
-                <img src="/skills/html_css.png" height="150"/>
+                <div class="skillimg"><img src="/skills/html_css.png" /></div>
                 <h3>HTML+SCSS</h3>
                 <p>
                     Zusammen mit Javascript bilden HTML und CSS den Dreiklang der Frontendentwicklung; SCSS rundet die Sache ab.
@@ -26,7 +26,7 @@
                 </p>
             </article>
             <article>
-                <img src="/skills/gcloud.png" height="150"/>
+                <div class="skillimg"><img src="/skills/gcloud.png" /></div>
                 <h3>Cloud</h3>
                 <p>
                     Warum selbst hosten, wenn es andere besser können - z.B. Google. Cloud Computing mit
@@ -36,7 +36,7 @@
                 </p>
             </article>
             <article>
-                <img src="/skills/sql.png" height="150"/>
+                <div class="skillimg"><img src="/skills/sql.png" /></div>
                 <h3>SQL</h3>
                 <p>
                     Geht es nicht ohne Backend, sind relationale Datenbanken oft nicht verkehrt, um Daten zu speichern.
@@ -44,7 +44,7 @@
                 </p>
             </article>
             <article>
-                <img src="/skills/orm.jpg" height="150"/>
+                <div class="skillimg"><img src="/skills/orm.jpg" /></div>
                 <h3>ORM</h3>
                 <p>
                     Queries immer selbst schreiben? Nicht immer notwendig. Ein objektrelationle Mapping erleichtert das
@@ -52,7 +52,7 @@
                 </p>
             </article>
             <article>
-                <img src="/skills/restapi.png" height="150"/>
+                <div class="skillimg"><img src="/skills/restapi.png" /></div>
                 <h3>REST</h3>
                 <p>
                     Da Frontend und Backend heutzutage meist getrennt werden, findet die Datenübergabe bei mir meist
@@ -75,15 +75,35 @@ export default {
     width: 94%;
     margin: 1% 3%;
 }
-.skillset {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 .skills article {
     display: block;
     margin: 1% auto;
     text-align: center;
+}
+.skills article p {
+    text-align: justify;
+}
+.skills article img {
+    position: relative;
+    top: 200px;
+    opacity: 0;
+    width: auto;
+    height: 100px;
+    border-radius: 5px;
+}
+.skills.in-viewport article img {
+    top: 0;
+    opacity: 1;
+    max-height: 100px;
+    transition: 
+        top 600ms ease-in, 
+        opacity 600ms ease-in;
+}
+
+.skillset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 @media all and (min-width: 486px) {
     .skillset article {
@@ -97,25 +117,8 @@ export default {
         margin: 1% 2%;
     }
 }
-.skills article p {
-    text-align: justify;
-}
-.skills article img {
-    position: relative;
-    top: 30rem;
-    height: 0;
-    width: 0;
-    opacity: 0;
-    border-radius: 5px;
-}
-.skills.in-viewport article img {
-    top: 0;
-    opacity: 1;
-    width: auto;
+
+.skillimg {
     height: 100px;
-    max-height: 100px;
-    transition: 
-        top 600ms ease-in, 
-        opacity 600ms ease-in;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
     <section class="ueber-mich">
-        <article class="box ueber-mich-text">
+        <article class="box ueber-mich-text" v-in-viewport.once="{ margin: '-20% 0%' }">
             <h2>#Über mich.</h2>
 
             <a href="mailto:web@fabian-marcus.de">
@@ -45,8 +45,9 @@
         </article>
         <article class="highlighted">
             <div class="box">
-                Entwickelt mit <a href="https://vuejs.org/" target="_blank">Vue.js</a> / <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a> 
-                und auf <a href="https://www.netlify.com/" target="_blank">Netlify</a> gehostet.
+                Entwickelt mit <a href="https://vuejs.org/" target="_blank">Vue.js</a>/<a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a> 
+                und <a href="https://sass-lang.com/" target="_blank">SCSS</a>. Code auf <a href="https://github.com/fabianmarcus/fm.de" target="_blank">Github</a>. 
+                Bereitgestellt mit <a href="https://www.netlify.com/" target="_blank">Netlify</a>.
             </div>
         </article>
     </section>
@@ -58,16 +59,27 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .ueber-mich {
     margin-top: 2rem;
     border-top: 2px solid black;
     background: url('/uebermich-bg.png') center center repeat;
     color: black;
+    
+    a {
+        color: black;
+    }
 }
-.ueber-mich a {
-    color: black;
+
+.ueber-mich-text {
+    opacity: 0;
+
+    &.in-viewport {
+        opacity: 1;
+        transition: opacity 1s linear;
+    } 
 }
+
 .kaffee {
     float: right;
     max-width: 150px;
@@ -81,13 +93,14 @@ export default {
     padding: 0.3rem;
     color: white;
     background-color: #243447;
-}
-.highlighted a {
-    color: white;
-    text-decoration: underline;
-}
-.highlighted a:hover,
-.highlighted a:active {
-    text-decoration: none;
+
+    a {
+        color: white;
+        text-decoration: underline;
+    }
+    a:hover,
+    a:active {
+        text-decoration: none;
+    }
 }
 </style>
