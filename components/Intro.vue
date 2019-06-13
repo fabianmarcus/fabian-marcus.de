@@ -23,7 +23,6 @@ export default {
         position: relative;
         padding: 10rem 1rem;
         overflow: hidden;
-        border-top: 2px solid black;
         border-bottom: 2px solid black;
         background: url("/intro-bg.jpg") center center;
         background-repeat: no-repeat;

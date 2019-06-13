@@ -2,6 +2,7 @@
     <section class="skills" v-in-viewport.once="{ margin: '-20% 0%' }">
         <div class="box">
             <h2>#Skills</h2>
+            <hr />
         </div>
         <div class="skillset">
             <article>

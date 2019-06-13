@@ -2,6 +2,7 @@
     <section class="ueber-mich">
         <article class="box ueber-mich-text" v-in-viewport.once="{ margin: '-20% 0%' }">
             <h2>#Über mich.</h2>
+            <hr />
 
             <a href="mailto:web@fabian-marcus.de">
                 <img alt="Email" src="/at-kaffee.jpg" width="150" class="kaffee"/>

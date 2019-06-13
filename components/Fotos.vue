@@ -1,6 +1,8 @@
 <template>
     <section class="fotos box" v-in-viewport.once="{ margin: '-20% 0%' }">
         <h2>#Ich.</h2>
+        <hr />
+        
         <div class="foto-liste">
             <a v-for="(image, imageIndex) in images" :key="imageIndex" class="foto" :class="`foto-${imageIndex+1}`">
                 <img alt="Portrait imageIndex" :src="image" @click="index = imageIndex"/>
