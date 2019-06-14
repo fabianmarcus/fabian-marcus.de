@@ -3,21 +3,26 @@
         <no-ssr>
             <div class="box">
                 <article class="kontakt">
-                    <h2 class="el-1">#Impressum</h2>
-                    <p class="el-2">
+                    <h2>#Impressum</h2>
+                    <p class="el-1">
                         Sebastianstr. 76<br />
                         53115 Bonn
                     </p>
-                    <p class="el-3">
+                    <p class="el-2">
                         <a href="tel:0163 / 30 60 438">0163 30 60 438</a><br />
                         <a href="mailto:web@fabian-marcus.de">web@fabian-marcus.de</a>
                     </p>
-                    <a class="el-4" href="https://www.fabian-marcus.de" target="_blank">www.fabian-marcus.de</a><br />
-                    <a class="el-5" href="https://blog.fabian-marcus.de" target="_blank">blog.fabian-marcus.de</a><br />
-                    <a class="el-6" href="https://twitter.com/FabeBN" target="_blank">Twitter</a><br />
-                    <a class="el-7" href="https://www.xing.com/profile/Fabian_Marcus" target="_blank">Xing</a><br />
-                    <a class="el-8" href="https://www.linkedin.com/in/fabian-marcus-19723ab0" target="_blank">LinkedIn</a><br />
-                    <a class="el-9 geloescht">Facebook (gelöscht)</a>
+                    <a class="el-3" href="https://www.fabian-marcus.de" target="_blank">www.fabian-marcus.de</a><br />
+                    <a class="el-4" href="https://blog.fabian-marcus.de" target="_blank">blog.fabian-marcus.de</a><br />
+                    
+                    <a class="el-5" href="https://twitter.com/FabeBN" target="_blank">Twitter,</a>
+                    <a class="el-6" href="https://stackshare.io/fabianmarcus" target="_blank">Stackshare.io</a><br />
+                    <a class="el-7" href="https://stackoverflow.com/users/10191006/fabian" target="_blank">Stackoverflow</a><br />
+
+                    <a class="el-8" href="https://www.xing.com/profile/Fabian_Marcus" target="_blank">Xing,</a>
+                    <a class="el-9" href="https://www.linkedin.com/in/fabian-marcus-19723ab0" target="_blank">LinkedIn</a><br />
+                    
+                    <a class="el-10 geloescht">Facebook (gelöscht)</a>
                 </article>
             </div>
         </no-ssr>
@@ -46,7 +51,7 @@ export default {
 
 .kontakt {
     position: relative;
-    display: inline-block;
+    display: table-cell;
     vertical-align: bottom;
     overflow: hidden;
     padding: 2rem 2rem;
@@ -63,7 +68,6 @@ export default {
  * Kontaktinfos ausblenden bzw.
  * aus Viewport schieben
  **/
-.kontakt > h2,
 .kontakt > a,
 .kontakt > p {
     position: relative;
@@ -72,7 +76,7 @@ export default {
 }
 
 /** Element der Reihe nach einblenden lassen */
-@for $i from 1 through 9 {
+@for $i from 1 through 15 {
     .in-viewport .kontakt > .el-#{$i} {
         left: 0;
         opacity: 1;
