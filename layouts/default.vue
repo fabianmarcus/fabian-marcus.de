@@ -21,6 +21,8 @@
 </template>
 
 <style lang="scss">
+  $blau: #243447;
+
   @keyframes colorchange {
     0% { background-color: white }
     20% { background-color: white }
@@ -35,7 +37,7 @@
     padding:0;
     line-height: 1.5;
     color: white;
-    background-color: #243447;
+    background-color: $blau;
     font-family: "Titillium Web",Roboto,"Helvetica Neue",Arial,sans-serif;
   }
 
@@ -82,7 +84,7 @@
     width: 100%;
     z-index: 100;
     border-bottom: 2px solid black;
-    background-color: #243447;
+    background-color: $blau;
   }
   .header__inner {
     display: flex;
@@ -111,9 +113,20 @@
   }
 
   .call-button {
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    border: 1px solid white;
+
+    > a {
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      color: white;
+      border-radius: 8px;
+      background-color: black;
+      border: 1px solid black;
+    }
+    > a:active, 
+    > a:hover {
+      color: white;
+      background-color: $blau;
+    }
   } 
 
   @media all and (min-width: 675px) {
