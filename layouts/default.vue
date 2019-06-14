@@ -3,9 +3,12 @@
     <header class="header">
       <div class="header__inner">
         <article>
-          <a href="https://www.fabian-marcus.de">
-            <strong>Fabian Marcus</strong><br />
-            Informatiker / Entwickler
+          <a class="logo" href="https://www.fabian-marcus.de">
+            <img class="logo__img" src="/fz-logo.png" title="Diese Seite ist Teil der FabeZone" />
+            <span class="logo__title">
+              <strong>Fabian Marcus</strong><br />
+              Informatiker / Entwickler
+            </span>
           </a>
         </article>
         <article class="call-button">
@@ -57,7 +60,7 @@
     outline: none;
     vertical-align: top;
     background-color: white;
-    animation: colorchange 20s infinite;
+    animation: colorchange 15s infinite;
 
     &.white {
       color: white;
@@ -91,9 +94,20 @@
     justify-content: space-between;
   }
 
-  .header a {
-    color: white;
+  .header a.logo {
+    display: inline-block;
     text-decoration: none;
+    color: white;
+  }
+
+  .header a.logo > span {
+    display: inline-block;
+    margin-left: 0.5rem;
+  }
+
+  .header a.logo > img {
+    float: left;
+    height: 3rem;
   }
 
   .call-button {
