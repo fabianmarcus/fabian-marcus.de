@@ -40,6 +40,7 @@
 <style lang="scss" scoped>
     .fotos {
         position: relative;
+        overflow: hidden;
     }
 
     .foto-liste {
@@ -73,10 +74,10 @@
     }
 
     /** Fotos aus Viewport herausschieben */
-    .foto-1 { left: -250px; top: -250px; }
-    .foto-3 { left: -250px; bottom: -250px; }
-    .foto-2 { right: -250px; top: -250px; }
-    .foto-4 { right: -250px; bottom: -250px;}
+    .foto-1 { left: -200px; top: -200px; }
+    .foto-3 { left: -200px; bottom: -200px; }
+    .foto-2 { right: -200px; top: -200px; }
+    .foto-4 { right: -200px; bottom: -200px;}
 
     /** Fotos einfliegen lassen */
     .fotos.in-viewport {
