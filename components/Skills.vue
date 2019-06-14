@@ -33,7 +33,7 @@
                     Warum selbst hosten, wenn es andere besser können - z.B. Google. Cloud Computing mit
                     <strong>Firestore</strong> &
                     <strong>Cloud/Serverless Functions</strong> bringt das Backend as a Service und verkürzt die Entwicklungszeit.
-                    Aber egal ob Google, AWS oder Azure: Es ist ein spannendes Thema!
+                    Aber egal ob Google, AWS oder ein einfach Netlify: Es ist ein spannendes Thema!
                 </p>
             </article>
             <article>
