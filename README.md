@@ -1,9 +1,8 @@
 # Fabian Marcus - Tech Portrait
 
-Website zu meinem Skillset und Werdegang, natürlich mit Kontaktdaten.
-https://www.fabian-marcus.de
+Website zu meinem Skillset und Werdegang, natürlich mit Kontaktdaten. Gebaut mit Vue.js/Nuxt.js & SCSS. Bereitgestellt mit Netlify. Code auf Github.
 
-Gebaut mit Vue.js/Nuxt.js & SCSS. Bereitgestellt mit Netlify. Code auf Github.
+https://www.fabian-marcus.de
 
 ## Build Setup
 
