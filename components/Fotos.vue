@@ -9,13 +9,13 @@
             </a>
         </div>
 
-        <no-ssr>
+        <client-only>
             <gallery 
                 :index="index" 
                 :images="images" 
                 @close="index = null">
             </gallery>
-        </no-ssr>
+        </client-only>
     </section>
 </template>
 

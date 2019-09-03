@@ -1,6 +1,6 @@
 <template>
     <section class="impressum" v-in-viewport.once="{ margin: '-20% 0%' }">
-        <no-ssr>
+        <client-only>
             <div class="box">
                 <article class="kontakt">
                     <h2>#Impressum</h2>
@@ -25,7 +25,7 @@
                     <a class="el-10 geloescht">Facebook (gelöscht)</a>
                 </article>
             </div>
-        </no-ssr>
+        </client-only>
     </section>
 </template>
 
