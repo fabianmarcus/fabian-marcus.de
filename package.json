@@ -16,7 +16,8 @@
     "typeface-titillium-web": "0.0.72",
     "vue-gallery": "^2.0.0",
     "vue-in-viewport-directive": "^2.0.0",
-    "vue-parallaxy": "^1.1.1"
+    "vue-parallaxy": "^1.1.1",
+    "vue-typer": "^1.2.0"
   },
   "devDependencies": {
     "node-sass": "^4.12.0",

@@ -30,8 +30,9 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '~/plugins/view-in-viewport.js' },  
-    { src: '~/plugins/image-lightbox.js', ssr: false }
+    { src: '~/plugins/view-in-viewport.js' },
+    { src: '~/plugins/image-lightbox.js', ssr: false },
+    { src: '~/plugins/typer.js', ssr: false }
   ],
   /*
   ** Nuxt.js modules

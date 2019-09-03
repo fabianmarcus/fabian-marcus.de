@@ -113,7 +113,6 @@
   }
 
   .call-button {
-
     > a {
       padding: 0.5rem 1rem;
       text-decoration: none;
