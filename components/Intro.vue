@@ -2,35 +2,29 @@
     <section class="intro">
         <client-only>
             <article class="box headliner">
-                <h2>
-                    <vue-typer 
-                        :repeat="0"
-                        :pre-type-delay="2000"
-                        text="Fabian M. Marcus">
-                    </vue-typer>
-                </h2>
+                <h2>Fabian M. Marcus</h2>
                 <p>
                     <vue-typer 
                         :repeat="0"
-                        :pre-type-delay="3000"
+                        :pre-type-delay="1000"
                         text="Fachinformatiker für Anwendungsentwicklung">
                     </vue-typer><br />
                     <vue-typer
                         :repeat="0"
-                        :pre-type-delay="6000"
+                        :pre-type-delay="4000"
                         text="Webentwickler,">
                     </vue-typer>
                     <span class="schwerpunkt">
                         <vue-typer 
                             :repeat="0"
-                            :pre-type-delay="8000"
+                            :pre-type-delay="5000"
                             text="Schwerpunkt">
                         </vue-typer> 
                         <strong>
                             <vue-typer
                                 :repeat="2"
                                 :pre-erase-delay="2000"
-                                :pre-type-delay="10000"
+                                :pre-type-delay="7000"
                                 :text='["Frontend", "Backend", "Frontend"]'
                                 erase-style='backspace'>
                             </vue-typer>
