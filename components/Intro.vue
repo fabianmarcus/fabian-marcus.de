@@ -29,7 +29,7 @@
                         <strong>
                             <vue-typer
                                 :repeat="2"
-                                :erase-delay="2000"
+                                :pre-erase-delay="2000"
                                 :pre-type-delay="10000"
                                 :text='["Frontend", "Backend", "Frontend"]'
                                 erase-style='backspace'>
