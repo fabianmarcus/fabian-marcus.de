@@ -1,12 +1,14 @@
 <template>
-    <section class="skills" v-in-viewport.once="{ margin: '-20% 0%' }">
+    <section class="skills">
         <div class="box">
             <h2>#Skills</h2>
             <hr />
         </div>
         <div class="skillset">
             <article>
-                <div class="skillimg"><img src="/skills/javascript.png" /></div>
+                <div class="skillimg">
+                    <img src="/skills/javascript.png" v-in-viewport.once="{margin: '0%'}" />
+                </div>
                 <h3>Javascript</h3>
                 <p>
                     Javascript durchlebt viele Veränderungen. Beim gegebenen Tempo ist es schwer, immer auf dem
@@ -17,7 +19,9 @@
                 </p>
             </article>
             <article>
-                <div class="skillimg"><img src="/skills/html_css.png" /></div>
+                <div class="skillimg">
+                    <img src="/skills/html_css.png" v-in-viewport.once="{margin: '0%'}" />
+                </div>
                 <h3>HTML+SCSS</h3>
                 <p>
                     Zusammen mit Javascript bilden HTML und CSS den Dreiklang der Frontendentwicklung; SCSS rundet die Sache ab.
@@ -27,7 +31,9 @@
                 </p>
             </article>
             <article>
-                <div class="skillimg"><img src="/skills/gcloud.png" /></div>
+                <div class="skillimg">
+                    <img src="/skills/gcloud.png" v-in-viewport.once="{margin: '0%'}" />
+                </div>
                 <h3>Cloud</h3>
                 <p>
                     Warum selbst hosten, wenn es andere besser können - z.B. Google. Cloud Computing mit
@@ -37,7 +43,9 @@
                 </p>
             </article>
             <article>
-                <div class="skillimg"><img src="/skills/sql.png" /></div>
+                <div class="skillimg">
+                    <img src="/skills/sql.png" v-in-viewport.once="{margin: '0%'}" />
+                </div>
                 <h3>SQL</h3>
                 <p>
                     Geht es nicht ohne Backend, sind relationale Datenbanken oft nicht verkehrt, um Daten zu speichern.
@@ -45,7 +53,9 @@
                 </p>
             </article>
             <article>
-                <div class="skillimg"><img src="/skills/orm.jpg" /></div>
+                <div class="skillimg">
+                    <img src="/skills/orm.jpg" v-in-viewport.once="{margin: '0%'}" />
+                </div>
                 <h3>ORM</h3>
                 <p>
                     Queries immer selbst schreiben? Nicht immer notwendig. Ein objektrelationle Mapping erleichtert das
@@ -53,7 +63,9 @@
                 </p>
             </article>
             <article>
-                <div class="skillimg"><img src="/skills/restapi.png" /></div>
+                <div class="skillimg">
+                    <img src="/skills/restapi.png" v-in-viewport.once="{margin: '0%'}" />
+                </div>
                 <h3>REST</h3>
                 <p>
                     Da Frontend und Backend heutzutage meist getrennt werden, findet die Datenübergabe bei mir meist
@@ -92,7 +104,7 @@ export default {
     height: 100px;
     border-radius: 5px;
 }
-.skills.in-viewport article img {
+.skills article img.in-viewport {
     top: 0;
     opacity: 1;
     max-height: 100px;
