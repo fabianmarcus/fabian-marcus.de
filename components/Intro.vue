@@ -22,7 +22,7 @@
                         </vue-typer> 
                         <strong>
                             <vue-typer
-                                :repeat="2"
+                                :repeat="0"
                                 :pre-erase-delay="2000"
                                 :pre-type-delay="7000"
                                 text="Frontend"
