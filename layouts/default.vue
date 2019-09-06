@@ -7,7 +7,9 @@
             <img class="logo__img" src="/fz-logo.png" title="Diese Seite ist Teil der FabeZone" />
             <span class="logo__title">
               <strong>Fabian Marcus</strong><br />
-              Informatiker / Entwickler
+              <a href="https://github.com/fabianmarcus" target="_blank" title="zu meinem Github-Account">
+                Informatiker / Entwickler - Github
+              </a>
             </span>
           </a>
         </article>
@@ -41,9 +43,14 @@
     font-family: "Titillium Web",Roboto,"Helvetica Neue",Arial,sans-serif;
   }
 
+  a {
+    color: white;
+    text-decoration: none;
+  }
   a:hover,
   a:active {
-    text-decoration: none;
+    color: white;
+    text-decoration: underline;
   }
 
   h1, h2, h3, strong {
