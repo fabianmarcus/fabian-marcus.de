@@ -48,7 +48,7 @@
             <div class="box">
                 Entwickelt mit <a href="https://vuejs.org/" target="_blank">Vue.js</a>/<a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a> 
                 und <a href="https://sass-lang.com/" target="_blank">SCSS</a>. Code auf <a href="https://github.com/fabianmarcus/fm.de" target="_blank">Github</a>. 
-                Bereitgestellt mit <a href="https://www.netlify.com/" target="_blank">Netlify</a>. Fotos by <a href="https://ilja-schlak.de" target="_blank">Ilja Schlak</a>.
+                Bereitgestellt mit <a href="https://www.netlify.com/" target="_blank">Netlify</a>. Fotos by <a href="http://ilja-schlak.de" target="_blank">Ilja Schlak</a>.
             </div>
         </article>
     </section>
