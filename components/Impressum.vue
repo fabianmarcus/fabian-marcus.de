@@ -13,16 +13,15 @@
                         <a href="mailto:web@fabian-marcus.de">web@fabian-marcus.de</a>
                     </p>
                     <a class="el-3" href="https://www.fabian-marcus.de" target="_blank">www.fabian-marcus.de</a><br />
-                    <a class="el-4" href="https://blog.fabian-marcus.de" target="_blank">blog.fabian-marcus.de</a><br />
+                    <a class="el-4" href="https://twitter.com/FabeBN" target="_blank">Twitter,</a>
+                    <a class="el-5" href="https://dev.to/fabebn" target="_blank">dev.to,</a>
+                    <a class="el-6" href="https://github.com/fabianmarcus" target="_blank">Github</a><br />
+
+                    <a class="el-7" href="https://stackoverflow.com/users/10191006/fabian" target="_blank">Stackoverflow,</a>
+                    <a class="el-8" href="https://stackshare.io/fabianmarcus" target="_blank">Stackshare</a><br />
                     
-                    <a class="el-5" href="https://twitter.com/FabeBN" target="_blank">Twitter,</a>
-                    <a class="el-6" href="https://www.xing.com/profile/Fabian_Marcus" target="_blank">Xing,</a>
-                    <a class="el-7" href="https://www.linkedin.com/in/fabian-marcus-19723ab0" target="_blank">LinkedIn</a><br />
-
-                    <a class="el-8" href="https://github.com/fabianmarcus" target="_blank">Github,</a>
-                    <a class="el-9" href="https://stackshare.io/fabianmarcus" target="_blank">Stackshare</a><br />
-
-                    <a class="el-10" href="https://stackoverflow.com/users/10191006/fabian" target="_blank">Stackoverflow</a><br />
+                    <a class="el-9" href="https://www.xing.com/profile/Fabian_Marcus" target="_blank">Xing,</a>
+                    <a class="el-10" href="https://www.linkedin.com/in/fabian-marcus-19723ab0" target="_blank">LinkedIn</a><br />
                     
                     <a class="el-11 geloescht">Facebook (gelöscht)</a>
                 </article>
