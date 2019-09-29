@@ -7,7 +7,7 @@
                     <vue-typer 
                         :repeat="0"
                         :pre-type-delay="1000"
-                        text="Fachinformatiker für Anwendungsentwicklung">
+                        text="Fachinformatiker AWE">
                     </vue-typer><br />
                     <vue-typer
                         :repeat="0"

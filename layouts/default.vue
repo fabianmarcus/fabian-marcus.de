@@ -8,7 +8,7 @@
             <span class="logo__title">
               <strong>Fabian Marcus</strong><br />
               <a href="https://github.com/fabianmarcus" target="_blank" title="zu meinem Github-Account">
-                Informatiker / Entwickler - Github
+                Informatiker / Entwickler
               </a>
             </span>
           </a>
@@ -95,7 +95,7 @@
   }
   .header__inner {
     display: flex;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     max-width: 760px;
     margin: 0 auto;
     color: white;
