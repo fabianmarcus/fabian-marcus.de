@@ -1,6 +1,6 @@
 <template>
     <section class="skills">
-        <div class="box">
+        <div>
             <h2>#Skills</h2>
             <hr />
         </div>

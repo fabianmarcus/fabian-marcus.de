@@ -95,12 +95,19 @@
   }
   .header__inner {
     display: flex;
-    padding: 0.5rem;
+    padding: 0.5rem 0.75rem;
     max-width: 760px;
     margin: 0 auto;
     color: white;
     align-items: center;
     justify-content: space-between;
+
+    @media all and (max-width: 400px) {
+      padding: 0.5rem 0.5rem;
+    }
+    @media all and (min-width: 675px) {
+      padding: 0.5rem 1rem;
+    }
   }
 
   .header a.logo {
