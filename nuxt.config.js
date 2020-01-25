@@ -32,7 +32,8 @@ export default {
   plugins: [
     { src: '~/plugins/view-in-viewport.js' },
     { src: '~/plugins/image-lightbox.js', ssr: false },
-    { src: '~/plugins/typer.js', ssr: false }
+    { src: '~/plugins/typer.js', ssr: false },
+    { src: '~/plugins/ga.js', mode: 'client' }
   ],
   /*
   ** Nuxt.js modules
