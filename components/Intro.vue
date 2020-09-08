@@ -4,7 +4,7 @@
             <article class="box headliner">
                 <h2>Fabian M. Marcus</h2>
                 <p>
-                    <vue-typer 
+                    <vue-typer
                         :repeat="0"
                         :pre-type-delay="1000"
                         text="Fachinformatiker AWE">
@@ -15,11 +15,11 @@
                         text="Webentwickler,">
                     </vue-typer>
                     <span class="schwerpunkt">
-                        <vue-typer 
+                        <vue-typer
                             :repeat="0"
                             :pre-type-delay="5000"
                             text="Schwerpunkt">
-                        </vue-typer> 
+                        </vue-typer>
                         <strong>
                             <vue-typer
                                 :repeat="0"
@@ -48,9 +48,24 @@ export default {
         padding: 10rem 1rem;
         overflow: hidden;
         border-bottom: 2px solid black;
-        background: url("/intro-bg.jpg") center center;
+        background: url('/intro-bg.S.jpg') center center;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    @media all and (min-width: 675px) {
+        .intro {
+            background: url('/intro-bg.jpg') center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    @media all and (min-width: 1280px) {
+        .intro {
+            background: url('/intro-bg.XL.jpg') center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     }
 
     .headliner {
