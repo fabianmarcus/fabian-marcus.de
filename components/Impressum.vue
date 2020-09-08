@@ -5,8 +5,8 @@
                 <article class="kontakt">
                     <h2>#Impressum</h2>
                     <p class="el-1">
-                        Sebastianstr. 76<br />
-                        53115 Bonn
+                        Theresienau 11<br />
+                        53227 Bonn
                     </p>
                     <p class="el-2">
                         <a href="tel:0163 / 30 60 438">0163 30 60 438</a><br />
@@ -20,7 +20,7 @@
 
                     <a class="el-8" href="https://stackoverflow.com/users/10191006/fabian" target="_blank">Stackoverflow,</a>
                     <a class="el-9" href="https://stackshare.io/fabianmarcus" target="_blank">Stackshare</a><br />
-                    
+
                     <a class="el-10" href="https://www.xing.com/profile/Fabian_Marcus" target="_blank">Xing,</a>
                     <a class="el-11" href="https://www.linkedin.com/in/fabian-marcus-19723ab0" target="_blank">LinkedIn</a><br />
                 </article>
@@ -47,7 +47,7 @@ export default {
 
 .box {
     padding: 0;
-} 
+}
 
 .kontakt {
     position: relative;
@@ -64,7 +64,7 @@ export default {
     color: white;
 }
 
-/** 
+/**
  * Kontaktinfos ausblenden bzw.
  * aus Viewport schieben
  **/
@@ -80,7 +80,7 @@ export default {
     .in-viewport .kontakt > .el-#{$i} {
         left: 0;
         opacity: 1;
-        transition: 
+        transition:
             left 0.3s ease-in 0.1s*$i,
             opacity 0.3s ease-in 0.1s*$i;
     }
