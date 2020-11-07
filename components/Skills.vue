@@ -97,6 +97,13 @@ export default {
     margin: 1% auto;
     text-align: center;
 }
+.skills article a {
+    text-decoration: underline;
+}
+.skills article a:hover,
+.skills article a:active {
+    text-decoration: none;
+}
 .skills article p {
     text-align: justify;
 }
