@@ -47,10 +47,11 @@
                     <div class="skillimg">
                         <img src="/skills/sql.png" v-in-viewport.once="{margin: '0%'}" />
                     </div>
-                    <h3>SQL</h3>
+                    <h3>SQL | NoSQL</h3>
                     <p>
-                        Geht es nicht ohne Backend, sind relationale Datenbanken oft nicht verkehrt, um Daten zu speichern.
-                        Auch hiermit arbeite ich immer wieder gerne - z.B. um eine API zu entwickeln.
+                        Geht es nicht ohne eigenes Backend, ist auch meist eine eigene Datenbank nicht weit.
+                        Je nach Bewertung des Anwednungsfalls eine SQL- oder eben NoSQL-Datenbank.
+                        Auch hiermit arbeite ich immer wieder gerne.
                     </p>
                 </article>
                 <article>
@@ -59,8 +60,9 @@
                     </div>
                     <h3>ORM</h3>
                     <p>
-                        Queries immer selbst schreiben? Nicht immer notwendig. Ein objektrelationle Mapping erleichtert das
-                        Leben für Standardabfragen ungemein und verkürzt die Entwicklungszeit. In Node.js zum Beispiel Sequelize.
+                        Queries immer selbst schreiben? Nicht immer notwendig. Ein objektrelationle Mapping
+                        erleichtert das Leben für Standardabfragen ungemein und verkürzt die Entwicklungszeit.
+                        In Node.js zum Beispiel <a href="https://sequelize.org/" target="_blank">Sequelize</a>.
                     </p>
                 </article>
                 <article>
@@ -110,8 +112,8 @@ export default {
     top: 0;
     opacity: 1;
     max-height: 100px;
-    transition: 
-        top 600ms ease-in, 
+    transition:
+        top 600ms ease-in,
         opacity 600ms ease-in;
 }
 
@@ -124,7 +126,7 @@ export default {
     .skillset article {
         max-width: 44%;
         margin: 1% 3%;
-    } 
+    }
 }
 @media all and (min-width: 1281px) {
     .skillset article {
