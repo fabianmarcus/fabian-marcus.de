@@ -11,19 +11,19 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^2.11.0",
-    "typeface-roboto": "0.0.75",
-    "typeface-titillium-web": "0.0.72",
+    "nuxt": "^2.14.7",
+    "typeface-roboto": "^1.1.13",
+    "typeface-titillium-web": "^1.1.13",
     "vue-gallery": "^2.0.1",
     "vue-in-viewport-directive": "^2.0.0",
     "vue-parallaxy": "^1.1.1",
     "vue-typer": "^1.2.0"
   },
   "devDependencies": {
-    "node-sass": "^4.14.1",
-    "nodemon": "^2.0.4",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.6",
     "pug": "^3.0.0",
     "pug-plain-loader": "^1.0.0",
-    "sass-loader": "^10.0.2"
+    "sass-loader": "^10.0.5"
   }
 }
