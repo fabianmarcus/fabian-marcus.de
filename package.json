@@ -20,7 +20,7 @@
     "vue-typer": "^1.2.0"
   },
   "devDependencies": {
-    "node-sass": "^5.0.0",
+    "node-sass": "^7.0.0",
     "nodemon": "^2.0.6",
     "pug": "^3.0.0",
     "pug-plain-loader": "^1.0.0",
