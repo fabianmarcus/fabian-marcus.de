@@ -21,9 +21,9 @@
   },
   "devDependencies": {
     "node-sass": "^9.0.0",
-    "nodemon": "^2.0.20",
+    "nodemon": "^3.1.4",
     "pug": "^3.0.1",
     "pug-plain-loader": "^1.0.0",
-    "sass-loader": "^10.0.5"
+    "sass-loader": "^14.2.1"
   }
 }
