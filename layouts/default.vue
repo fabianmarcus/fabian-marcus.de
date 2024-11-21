@@ -1,16 +1,18 @@
 <template>
   <div class="layout">
     <header class="header">
-      <div class="header__inner">
-        <article>
+      <div class="header-inner">
+        <article class="headline">
           <a class="logo" href="https://www.fabian-marcus.de">
-            <img class="logo__img" src="/fz-logo.png" title="Diese Seite ist Teil der FabeZone" />
-            <span class="logo__title">
-              <strong>Fabian Marcus</strong><br />
-              <a href="https://github.com/fabianmarcus" target="_blank" title="zu meinem Github-Account">
-                Informatiker / Entwickler
-              </a>
-            </span>
+            <img
+              src="/fz-logo.png"
+              alt="Initialen FM"
+              title="Fabian Marcus - Porträt Webseite"
+            />
+          </a>
+          <a href="https://github.com/fabianmarcus" target="_blank" title="zu meinem Github-Account">
+            <strong>Fabian Marcus</strong><br />
+            <span>Informatiker / Entwickler</span>
           </a>
         </article>
         <article class="call-button">
@@ -18,7 +20,8 @@
         </article>
       </div>
     </header>
-    <nuxt />
+
+    <slot />
   </div>
 </template>
 
@@ -29,20 +32,22 @@
     0% { background-color: white }
     20% { background-color: white }
     35% { background-color: black }
-    75% { background-color: black } 
+    75% { background-color: black }
     100% { background-color: white }
   }
 
+  // Generelle Body Styles für die gesamte Seite
   body {
+    padding:0;
+    color: white;
+    line-height: 1.5;
     position: relative;
     margin: 4rem 0 0 0;
-    padding:0;
-    line-height: 1.5;
-    color: white;
     background-color: $blau;
-    font-family: "Titillium Web",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-family: "Titillium Web", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
 
+  // Generelle Link-Styles für die gesamte Seite
   a {
     color: white;
     text-decoration: none;
@@ -57,7 +62,8 @@
     font-weight: 600;
   }
 
-  h2 + hr, 
+  // Farbwechselnde Linie unter Überschriften
+  h2 + hr,
   h3 + hr {
     display: inline-block;
     padding: 0;
@@ -79,21 +85,24 @@
     }
   }
 
+  // Die einzelnen #-Abschnitte
   .box {
     max-width: 760px;
     padding: 1rem;
     margin: 0 auto;
-  } 
+  }
 
+  // Der Header (sticky)
   .header {
-    position: fixed;
-    top: 0; left: 0;
     width: 100%;
     z-index: 100;
-    border-bottom: 2px solid black;
+    position: fixed;
+    top: 0; left: 0;
     background-color: $blau;
+    border-bottom: 2px solid black;
   }
-  .header__inner {
+
+  .header-inner {
     display: flex;
     padding: 0.5rem 0.75rem;
     max-width: 760px;
@@ -101,6 +110,22 @@
     color: white;
     align-items: center;
     justify-content: space-between;
+
+    > article {
+      display: flex;
+      align-items: center;
+    }
+
+    a {
+      color: white;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    // Etwas Abstand zw. Headline und Logo
+    > .headline a {
+      margin-right: 0.5rem;
+    }
 
     @media all and (max-width: 400px) {
       padding: 0.5rem 0.5rem;
@@ -110,22 +135,13 @@
     }
   }
 
-  .header a.logo {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-  }
-
-  .header a.logo > span {
-    display: inline-block;
-    margin-left: 0.5rem;
-  }
-
   .header a.logo > img {
-    float: left;
+    display: inline-block;
+    vertical-align: middle;
     height: 3rem;
   }
 
+  // Der "Anruf"-Button, der nur auf mobile erscheint
   .call-button {
     > a {
       padding: 0.5rem 1rem;
@@ -135,12 +151,12 @@
       background-color: black;
       border: 1px solid black;
     }
-    > a:active, 
+    > a:active,
     > a:hover {
       color: white;
       background-color: $blau;
     }
-  } 
+  }
 
   @media all and (min-width: 675px) {
     .call-button {

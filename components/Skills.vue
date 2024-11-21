@@ -1,14 +1,14 @@
 <template>
     <section>
         <div class="box">
-            <h2>#Skills</h2>
+            <h2># Skills</h2>
             <hr />
         </div>
         <div class="skills">
             <div class="skillset">
                 <article>
                     <div class="skillimg">
-                        <img src="/skills/javascript.png" v-in-viewport.once="{margin: '0%'}" />
+                        <img src="/skills/javascript.png" />
                     </div>
                     <h3>Javascript</h3>
                     <p>
@@ -21,7 +21,7 @@
                 </article>
                 <article>
                     <div class="skillimg">
-                        <img src="/skills/html_css.png" v-in-viewport.once="{margin: '0%'}" />
+                        <img src="/skills/html_css.png" />
                     </div>
                     <h3>HTML+SCSS</h3>
                     <p>
@@ -33,7 +33,7 @@
                 </article>
                 <article>
                     <div class="skillimg">
-                        <img src="/skills/gcloud.png" v-in-viewport.once="{margin: '0%'}" />
+                        <img src="/skills/gcloud.png" />
                     </div>
                     <h3>Cloud</h3>
                     <p>
@@ -45,7 +45,7 @@
                 </article>
                 <article>
                     <div class="skillimg">
-                        <img src="/skills/sql.png" v-in-viewport.once="{margin: '0%'}" />
+                        <img src="/skills/sql.png" />
                     </div>
                     <h3>SQL | NoSQL</h3>
                     <p>
@@ -56,7 +56,7 @@
                 </article>
                 <article>
                     <div class="skillimg">
-                        <img src="/skills/orm.jpg" v-in-viewport.once="{margin: '0%'}" />
+                        <img src="/skills/orm.jpg" />
                     </div>
                     <h3>ORM</h3>
                     <p>
@@ -67,7 +67,7 @@
                 </article>
                 <article>
                     <div class="skillimg">
-                        <img src="/skills/restapi.png" v-in-viewport.once="{margin: '0%'}" />
+                        <img src="/skills/restapi.png" />
                     </div>
                     <h3>REST</h3>
                     <p>
@@ -109,20 +109,21 @@ export default {
 }
 .skills article img {
     position: relative;
-    top: 200px;
-    opacity: 0;
+    /* top: 200px; */
+    /* opacity: 0; */
     width: auto;
     height: 100px;
+    max-height: 100px;
     border-radius: 5px;
 }
-.skills article img.in-viewport {
+/* In Viewport Slide */
+/* .skills article img {
     top: 0;
     opacity: 1;
-    max-height: 100px;
     transition:
         top 600ms ease-in,
         opacity 600ms ease-in;
-}
+} */
 
 .skillset {
     display: flex;

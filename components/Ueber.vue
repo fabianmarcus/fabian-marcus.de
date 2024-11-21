@@ -1,7 +1,7 @@
 <template>
     <section class="ueber-mich">
-        <article class="box ueber-mich-text" v-in-viewport.once="{ margin: '-20% 0%' }">
-            <h2>#Über mich.</h2>
+        <article class="box ueber-mich-text">
+            <h2># Über mich</h2>
             <hr />
 
             <a href="mailto:web@fabian-marcus.de">
@@ -20,7 +20,7 @@
             <p>
                 Mit diesem Wissen als Basis fiel es von dort an nicht schwer, am Ball zu bleiben. Heutige Trendthemen
                 wie Single Page Applications mittels <strong>reaktiver Javascript-Frameworks</strong> (z.B. React oder Vue.js),
-                <strong>Progressive Webapps</strong>, <strong>Responsive Design</strong>, Mobile Development, RESTfull APIs, 
+                <strong>Progressive Webapps</strong>, <strong>Responsive Design</strong>, Mobile Development, RESTfull APIs,
                 & Testing sind keine Fremdwörter geblieben.
             </p>
             <p>
@@ -33,7 +33,7 @@
             </p>
             <p>
                 Meine Arbeitsweise ist pragmatisch und lösungsorientiert - natürlich nicht auf Kosten der Qualität.
-                Generell stehe ich dem neuen heißen shice, der sich da draußen stetig auftut, interessiert und offen 
+                Generell stehe ich dem neuen heißen shice, der sich da draußen stetig auftut, interessiert und offen
                 gegenüber.
             </p>
             <p>
@@ -46,8 +46,8 @@
         </article>
         <article class="highlighted">
             <div class="box">
-                Entwickelt mit <a href="https://vuejs.org/" target="_blank">Vue.js</a>/<a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a> 
-                und <a href="https://sass-lang.com/" target="_blank">SCSS</a>. Code auf <a href="https://github.com/fabianmarcus/fm.de" target="_blank">Github</a>. 
+                Entwickelt mit <a href="https://vuejs.org/" target="_blank">Vue.js</a>/<a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a>
+                und <a href="https://sass-lang.com/" target="_blank">SCSS</a>. Code auf <a href="https://github.com/fabianmarcus/fm.de" target="_blank">Github</a>.
                 Bereitgestellt mit <a href="https://www.netlify.com/" target="_blank">Netlify</a>. Fotos by <a href="http://ilja-schlak.de" target="_blank">Ilja Schlak</a>.
             </div>
         </article>
@@ -66,20 +66,21 @@ export default {
     border-top: 2px solid black;
     background: url('/uebermich-bg.png') center center repeat;
     color: black;
-    
+
     a {
         color: black;
     }
 }
 
-.ueber-mich-text {
-    opacity: 0;
+// Styles fuer deaktivierten In-Viewport-Effekt
+// .ueber-mich-text {
+//     opacity: 0;
 
-    &.in-viewport {
-        opacity: 1;
-        transition: opacity 1s linear;
-    } 
-}
+//     &.in-viewport {
+//         opacity: 1;
+//         transition: opacity 1s linear;
+//     }
+// }
 
 .kaffee {
     float: right;

@@ -1,29 +1,29 @@
 {
   "name": "website",
   "version": "1.0.0",
-  "description": "Fabian Marcus - Tech Portrait. Website zu Skillset & Werdegang",
   "author": "Fabian Marcus",
+  "description": "Fabian Marcus - Tech Portrait. Website zu Skillset & Werdegang",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "nuxt": "^2.11.0",
-    "typeface-roboto": "0.0.75",
-    "typeface-titillium-web": "0.0.72",
+    "@vueuse/core": "^11.2.0",
+    "nuxt": "^3.14.159",
+    "typeface-roboto": "^1.1.13",
+    "typeface-titillium-web": "^1.1.13",
+    "vue": "latest",
     "vue-gallery": "^2.0.1",
-    "vue-in-viewport-directive": "^2.0.0",
-    "vue-parallaxy": "^1.1.1",
-    "vue-typer": "^1.2.0"
+    "vue-router": "latest"
   },
   "devDependencies": {
-    "node-sass": "^4.14.1",
-    "nodemon": "^2.0.4",
-    "pug": "^3.0.0",
-    "pug-plain-loader": "^1.0.0",
-    "sass-loader": "^10.0.2"
+    "sass": "^1.81.0",
+    "sass-embedded": "^1.81.0",
+    "sass-loader": "^16.0.3"
   }
 }

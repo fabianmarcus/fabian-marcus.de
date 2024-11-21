@@ -4,32 +4,8 @@
             <article class="box headliner">
                 <h2>Fabian M. Marcus</h2>
                 <p>
-                    <vue-typer
-                        :repeat="0"
-                        :pre-type-delay="1000"
-                        text="Fachinformatiker AWE">
-                    </vue-typer><br />
-                    <vue-typer
-                        :repeat="0"
-                        :pre-type-delay="4000"
-                        text="Webentwickler,">
-                    </vue-typer>
-                    <span class="schwerpunkt">
-                        <vue-typer
-                            :repeat="0"
-                            :pre-type-delay="5000"
-                            text="Schwerpunkt">
-                        </vue-typer>
-                        <strong>
-                            <vue-typer
-                                :repeat="0"
-                                :pre-erase-delay="2000"
-                                :pre-type-delay="7000"
-                                text="Frontend"
-                                erase-style='backspace'>
-                            </vue-typer>
-                        </strong>
-                    </span>
+                    Fachinformatiker AWE<br />
+                    Webentwickler, <span class="nowrap">Schwerpunkt <strong>Frontend</strong></span>
                 </p>
             </article>
         </client-only>
@@ -81,7 +57,7 @@ export default {
         margin: 1rem 0;
         font-size: 1.3rem;
     }
-    .schwerpunkt {
+    .nowrap {
         white-space: nowrap;
     }
 </style>
