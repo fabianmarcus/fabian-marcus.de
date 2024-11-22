@@ -3,6 +3,13 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
 
+  // Serverseitiges Rendering ein-/ausschalten
+  ssr: true,
+
+  nitro: {
+    preset: 'netlify'
+  },
+
   $meta: {
     name: 'Fabian Marcus - Ich. Über mich.',
   },
