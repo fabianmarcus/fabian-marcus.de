@@ -10,12 +10,11 @@
                     <div class="skillimg">
                         <img src="/skills/javascript.png" />
                     </div>
-                    <h3>Javascript</h3>
+                    <h3>JavaScript</h3>
                     <p>
-                        Javascript durchlebt viele Veränderungen. Beim gegebenen Tempo ist es schwer, immer auf dem
-                        Laufenden zu bleiben. Da Javascript aber gleichzeitig meine
-                        <strong>Lieblingsdisziplin</strong> bildet, macht es
-                        trotzdem Spaß! Egal ob React, Vue.js, Mithril oder Node.js: Sie kamen mir alle schon mal unter
+                        JavaScript durchlebt viele Veränderungen. Beim gegebenen Tempo ist es schwer, immer auf dem
+                        Laufenden zu bleiben. Da JavaScript aber gleichzeitig meine <strong>Lieblingsdisziplin</strong> bildet,
+                        macht es trotzdem Spaß! Egal ob React, Vue.js, Mithril oder Node.js: Sie kamen mir alle schon mal unter
                         die Tastatur...
                     </p>
                 </article>
@@ -25,7 +24,7 @@
                     </div>
                     <h3>HTML+SCSS</h3>
                     <p>
-                        Zusammen mit Javascript bilden HTML und CSS den Dreiklang der Frontendentwicklung; SCSS rundet die Sache ab.
+                        Zusammen mit JavaScript bilden HTML und CSS den Dreiklang der Frontendentwicklung; SCSS rundet die Sache ab.
                         Mit einem Auge für Abstände, Farben und einem gezielten Maß an Animationen macht es mir immer wieder Spaß,
                         schöne, saubere & UX freundliche Designs zu entwickeln! Alles
                         <strong>responsive & mobile first</strong> natürlich...
@@ -38,9 +37,9 @@
                     <h3>Cloud</h3>
                     <p>
                         Warum selbst hosten, wenn es andere besser können - z.B. Google. Cloud Computing mit
-                        <strong>Firestore</strong> &
-                        <strong>Cloud/Serverless Functions</strong> bringt das Backend as a Service und verkürzt die Entwicklungszeit.
-                        Aber egal ob Google, AWS oder ein einfach Netlify: Es ist ein spannendes Thema!
+                        <strong>Firestore</strong> & <strong>Cloud/Serverless Functions</strong> bringt das
+                        Backend as a Service und verkürzt die Entwicklungszeit. Aber egal ob Google, AWS oder
+                        Netlify: Es ist ein spannendes Thema!
                     </p>
                 </article>
                 <article>
@@ -60,9 +59,10 @@
                     </div>
                     <h3>ORM</h3>
                     <p>
-                        Queries immer selbst schreiben? Nicht immer notwendig. Ein objektrelationle Mapping
-                        erleichtert das Leben für Standardabfragen ungemein und verkürzt die Entwicklungszeit.
-                        In Node.js zum Beispiel <a href="https://sequelize.org/" target="_blank">Sequelize</a>.
+                        Queries immer selbst schreiben? Oft nicht notwendig. Ein objektrelationles Mapping
+                        erleichtert das Leben für Standardabfragen ungemein und erhöht die Sicherheit gegen SQL-Injections.
+                        Zuletzt hatte mir <a href="https://prisma.io/" target="_blank">Prisma.js</a> in
+                        einem <a href="https://nodejs.org/">Node.js</a> Backend mit <a href="https://fastify.dev/">Fastify.js</a> gute Dienste erwiesen.
                     </p>
                 </article>
                 <article>
@@ -72,8 +72,47 @@
                     <h3>REST</h3>
                     <p>
                         Da Frontend und Backend heutzutage meist getrennt werden, findet die Datenübergabe bei mir meist
-                        im <strong>JSON-Format</strong> als Teil einer REST-API statt. Gerade im Javascript-Umfeld bietet sich dadurch eine
-                        einfache Schnittestelle, Daten auszutauschen.
+                        im <strong>JSON-Format</strong> als Teil einer <strong>REST-API</strong> statt. Gerade im
+                        JavaScript-Umfeld bietet sich dadurch eine einfache Schnittstelle, Daten auszutauschen.
+                    </p>
+                </article>
+                <article>
+                    <div class="skillimg">
+                        <img src="/skills/testing.jpg" />
+                    </div>
+                    <h3>Testing</h3>
+                    <p>
+                        Ein Projekt ohne Tests ist wie ein Auto ohne TÜV. Ob <strong>Unit-Tests</strong> oder
+                        <strong>Integrationstests</strong>: Sie sind ein wichtiger Bestandteil meiner Projekte.
+                        Gerade in der Frontendentwicklung sind sie wichtig, um den Benutzer nicht in einer endlosen
+                        UX-Frustration zurückzulassen. Deshalb überprüfe ich meine Projekte gerne
+                        mit <a href="https://jestjs.io/" target="_blank">Jest</a> und <a href="https://www.cypress.io/" target="_blank">Cypress</a>,
+                        um die Qualität des Codes zu sichern.
+                    </p>
+                </article>
+                <article>
+                    <div class="skillimg">
+                        <img src="/skills/ci-cd.jpg" />
+                    </div>
+                    <h3>DevOps | CI/CD</h3>
+                    <p>
+                        Ein Projekt ist erst fertig, wenn es in der Produktion läuft. Wenn es also notwendig ist, schrecke
+                        ich auch vor dem Schreiben von Bash Skripten nicht zurück. So habe ich zuletzt Deployment-, Backup-
+                        und Rollback-Skripte geschrieben, um die Deployment-Pipeline meiner Projekte zu automatisieren. Mit
+                        <a href="https://google.github.io/zx/" target="_blank" title="Google ZX Website">Google ZX</a> macht
+                        es am Ende sogar noch mehr Spaß - JavaScript für die Shell!
+                    </p>
+                </article>
+                <article>
+                    <div class="skillimg">
+                        <img src="/skills/openai-logo.jpg" />
+                    </div>
+                    <h3>KI / AI</h3>
+                    <p>
+                        Künstliche Intelligenz ist ein spannendes Thema, das ich gerne weiter vertiefen möchte.
+                        Angefangen beim Prompting gegen die angebotenen APIs von Open AI, Google & Co. bis hin
+                        zur Anreicherung der Models durch eigene Daten mittels RAG, möchte ich mein Wissen in
+                        diesem Gebiet mit der Zeit stetig erweitern.
                     </p>
                 </article>
             </div>
