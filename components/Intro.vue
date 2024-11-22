@@ -7,6 +7,11 @@
                     Fachinformatiker AWE<br />
                     Webentwickler, <span class="nowrap">Schwerpunkt <strong>Frontend</strong></span>
                 </p>
+                <p>
+                    <a href="http://cv.fabian-marcus.de" target="_blank" title="Lebenslauf öffnen">
+                        Lebenslauf
+                    </a>
+                </p>
             </article>
         </client-only>
     </section>
@@ -18,7 +23,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
     .intro {
         position: relative;
         padding: 10rem 1rem;
@@ -51,11 +56,21 @@ export default {
         background-color: rgba(255, 255, 255, 0.7);
     }
     .headliner h2 {
+        padding: 0;
+        margin: 0;
         margin-top: 0.3rem;
     }
     .headliner p {
-        margin: 1rem 0;
+        margin: 0;
         font-size: 1.3rem;
+    }
+    .headliner a {
+        color: black;
+        text-decoration: underline;
+
+        &:hover, &:active {
+            text-decoration: none;
+        }
     }
     .nowrap {
         white-space: nowrap;
