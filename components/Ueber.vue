@@ -18,30 +18,8 @@
                 theoretische Paradigmen, als auch der konkrete praktische Einsatz gelernt und vertieft.
             </p>
             <p>
-                Mit diesem Wissen als Basis fiel es von dort an nicht schwer, am Ball zu bleiben. Heutige Trendthemen
-                wie Single Page Applications mittels <strong>reaktiver Javascript-Frameworks</strong> (z.B. React oder Vue.js),
-                <strong>Progressive Webapps</strong>, <strong>Responsive Design</strong>, Mobile Development, RESTfull APIs,
-                & Testing sind keine Fremdwörter geblieben.
-            </p>
-            <p>
-                <strong>Zurzeit</strong> bin ich als Frontend-Entwickler bei
-                der <a href="https://www.phoenixreisen.com" target="_blank">Phoenix Reisen GmbH</a> in Bonn angestellt
-                und arbeite dort hauptsächlich am Buchungssystem sowie an Schiff-Apps für Gäste an Bord. Die Entwicklung
-                neuer Features erfolgt in ES6+ mittels reaktiver Javascript-Frameworks sowie diversen npm-Modulen.
-                Styling in Sass bzw. SCSS. Bundling und Buildprozess mit Webpack. Die IT-Struktur unterteilt sich
-                in Microservices (auch in Mikro-Frontends).
-            </p>
-            <p>
+                Mit diesem Wissen als Basis fiel es von dort an nicht schwer, am Ball zu bleiben. 
                 Meine Arbeitsweise ist pragmatisch und lösungsorientiert - natürlich nicht auf Kosten der Qualität.
-                Generell stehe ich dem neuen heißen shice, der sich da draußen stetig auftut, interessiert und offen
-                gegenüber.
-            </p>
-            <p>
-                Zwar suche ich nicht aktiv, bin aber natürlich immer offen für spannende Angebote...
-            </p>
-            <p>
-                Mit besten Grüßen<br />
-                Fabian M. Marcus
             </p>
         </article>
         <article class="highlighted">
